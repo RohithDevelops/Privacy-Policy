@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy · Enhanced Screen Capture</title>
+    <meta name="description" content="Privacy policy for the Enhanced Screen Capture browser extension. No data is collected; everything stays on your device." />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f6f7fb;
+        --surface: #ffffff;
+        --border: #e2e5ee;
+        --text: #1a1f33;
+        --muted: #5f6680;
+        --accent: #4f46e5;
+        --accent-soft: #eef0ff;
+        --code: #f0f2f8;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f1117;
+          --surface: #171a23;
+          --border: #2a2f3e;
+          --text: #e8eaf2;
+          --muted: #9aa1b8;
+          --accent: #8b84ff;
+          --accent-soft: #24223f;
+          --code: #222636;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      }
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 48px 16px 64px;
+      }
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 36px 32px;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 8px;
+      }
+      .logo {
+        flex: none;
+        width: 44px;
+        height: 44px;
+        border-radius: 11px;
+        background: linear-gradient(135deg, #6366f1, #8b5cf6);
+        display: grid;
+        place-items: center;
+      }
+      h1 {
+        margin: 0;
+        font-size: 26px;
+        line-height: 1.25;
+        letter-spacing: -0.01em;
+      }
+      .updated {
+        color: var(--muted);
+        font-size: 14px;
+        margin: 0 0 24px;
+      }
+      h2 {
+        margin: 32px 0 8px;
+        font-size: 19px;
+      }
+      p,
+      ul {
+        margin: 0 0 14px;
+      }
+      ul {
+        padding-left: 22px;
+      }
+      li {
+        margin-bottom: 8px;
+      }
+      .highlight {
+        background: var(--accent-soft);
+        border-radius: 12px;
+        padding: 16px 18px;
+        margin: 8px 0 14px;
+      }
+      code {
+        font: 13.5px/1.4 ui-monospace, "Cascadia Code", Consolas, monospace;
+        background: var(--code);
+        padding: 2px 6px;
+        border-radius: 6px;
+        white-space: nowrap;
+      }
+      .table-wrap {
+        overflow-x: auto;
+        margin: 4px 0 14px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 15px;
+      }
+      th,
+      td {
+        text-align: left;
+        vertical-align: top;
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--border);
+      }
+      th {
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+      a {
+        color: var(--accent);
+      }
+      footer {
+        margin-top: 24px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      @media (max-width: 560px) {
+        main {
+          padding-top: 24px;
+        }
+        .card {
+          padding: 24px 18px;
+        }
+        h1 {
+          font-size: 22px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <header>
+          <div class="logo" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 9V5h4M16 4h4v4M20 15v4h-4M8 20H4v-4" />
+              <circle cx="12" cy="12" r="2.4" fill="#fff" stroke="none" />
+            </svg>
+          </div>
+          <h1>Privacy Policy: Enhanced Screen Capture</h1>
+        </header>
+        <p class="updated">Last updated: October 2, 2026</p>
+
+        <p>
+          Enhanced Screen Capture is a browser extension for taking screenshots, recording your screen, and annotating
+          captures. It is built to work entirely on your device.
+        </p>
+
+        <h2>What the extension collects</h2>
+        <div class="highlight">
+          <strong>Nothing.</strong> The extension does not collect, transmit, sell or share any personal or usage data. It
+          has no analytics, telemetry, advertising or tracking code. It makes no network requests.
+        </div>
+
+        <h2>What stays on your device</h2>
+        <ul>
+          <li>
+            <strong>Screenshots and recordings</strong> you take are stored in your browser's local storage (IndexedDB) so
+            they appear in the extension's History page. They never leave your device unless you choose to download, copy
+            or share them yourself. Only the most recent captures are kept (50 by default, adjustable in Settings), and you
+            can delete any or all of them at any time from the History page.
+          </li>
+          <li><strong>Annotations</strong> you add in the editor are stored locally with the capture.</li>
+          <li>
+            <strong>Settings</strong> (for example your preferred file format) are stored with
+            <code>chrome.storage.sync</code>. If you are signed in to Chrome with sync enabled, Chrome syncs these
+            preferences between your own devices. They contain no personal data.
+          </li>
+        </ul>
+
+        <h2>Page content</h2>
+        <p>
+          When you start a capture, the extension temporarily reads the page's layout (scroll size and positions of sticky
+          or fixed elements) to stitch a full-page image. It also temporarily adjusts the page's styling so sticky headers
+          don't repeat, then restores everything afterwards. Page content is not stored or transmitted, except as the image
+          you asked for.
+        </p>
+
+        <h2>Microphone, tab audio and screen</h2>
+        <p>
+          The microphone, tab audio and screen are accessed only while you are recording, and only after you start a
+          recording. Chrome shows its own indicators and prompts whenever these are in use. Audio and video go straight
+          into the recording file on your device.
+        </p>
+
+        <h2>Permissions</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Permission</th>
+                <th>Why it's needed</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>activeTab</code></td>
+                <td>Capture the tab you're on, only when you click the extension or use its shortcut or menu</td>
+              </tr>
+              <tr>
+                <td><code>scripting</code></td>
+                <td>Show the area-selection overlay and scroll the page to build full-page captures</td>
+              </tr>
+              <tr>
+                <td><code>tabCapture</code></td>
+                <td>Record the current tab</td>
+              </tr>
+              <tr>
+                <td><code>offscreen</code></td>
+                <td>Run the tab recorder in the background while you keep using the page</td>
+              </tr>
+              <tr>
+                <td><code>downloads</code></td>
+                <td>Save screenshots and recordings to your Downloads folder</td>
+              </tr>
+              <tr>
+                <td><code>storage</code>, <code>unlimitedStorage</code></td>
+                <td>Keep your settings and local capture history (images and videos can be large)</td>
+              </tr>
+              <tr>
+                <td><code>contextMenus</code></td>
+                <td>Right-click menu shortcuts for capturing</td>
+              </tr>
+              <tr>
+                <td><code>clipboardWrite</code></td>
+                <td>Copy screenshots to your clipboard</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Children</h2>
+        <p>The extension is not directed at children and collects no information from anyone.</p>
+
+        <h2>Changes</h2>
+        <p>If this policy changes, the updated version will be published at the same address with a new "Last updated" date.</p>
+
+        <h2>Contact</h2>
+        <p>Questions about privacy: <a href="mailto:rohithk422@gmail.com">rohithk422@gmail.com</a></p>
+      </article>
+      <footer>Enhanced Screen Capture</footer>
+    </main>
+  </body>
+</html>
